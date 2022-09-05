@@ -9,4 +9,3 @@ const passwordgenerator = (num) =>{
     }
     console.log(senha);
 }
-passwordgenerator(5)
