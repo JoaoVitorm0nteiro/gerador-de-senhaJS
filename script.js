@@ -14,20 +14,12 @@ btn.addEventListener("click", function (e) {
             senha.concat(characters[random(0, characters.length-1)]) 
             senha += characters[(random(0, characters.length-1))]
         }
-        console.log(senha);
+        const result = document.querySelector("#senha")
+        result.innerText = senha
+        
+        
+
     }
     passwordgenerator(formatedinpt)
 })
  
-/* const passwordgenerator = (num) =>{
-    const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
-
-    characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-    senha = ''
-    for(let i = 0; i<num; i++){
-        /* senha.concat(characters[random(0, characters.length-1)]) 
-        senha += characters[(random(0, characters.length-1))]
-    }
-    console.log(senha);
-}
-passwordgenerator(5) */
